@@ -2,6 +2,8 @@ package lee.com.noodle.Presenter;
 
 import android.content.Context;
 
+import java.util.ArrayList;
+
 import lee.com.noodle.Data.NoodleItem;
 
 public interface MainContract {
@@ -21,6 +23,6 @@ public interface MainContract {
 
         void setNoodleItem(NoodleItem item);
 
-        void loadItems(Context context);
+        ArrayList<NoodleItem> loadItems();
     }
 }

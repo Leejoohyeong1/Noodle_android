@@ -1,17 +1,19 @@
 package lee.com.noodle.Data;
 
 
-public class NoodleItem {
-    int NoodelPk;
-    String ImageUrl;
-    String Name;
+import com.google.gson.annotations.SerializedName;
 
-    public int getNoodelPk() {
-        return NoodelPk;
+public class NoodleItem {
+    @SerializedName("NoodlePk") int NoodlePk;
+    @SerializedName("ImageUrl") String ImageUrl;
+    @SerializedName("Name") String Name;
+
+    public int getNoodlePk() {
+        return NoodlePk;
     }
 
-    public void setNoodelPk(int noodelPk) {
-        NoodelPk = noodelPk;
+    public void setNoodlePk(int noodlePk) {
+        NoodlePk = noodlePk;
     }
 
     public String getImageUrl() {
